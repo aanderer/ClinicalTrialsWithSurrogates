@@ -1,0 +1,10 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Sat Nov 04 20:44:39 EDT 2017 -->
+<data>
+<image file='AWADA1113_PFS.png' />
+<axesnames x='months'  y='p' />
+<calibpoints minXaxisX='93.33333333333333' minXaxisY='230.66666666666666' maxXaxisX='525.3333333333334' maxXaxisY='230.66666666666666' minYaxisX='93.33333333333333' minYaxisY='230.0' maxYaxisX='93.33333333333333' maxYaxisY='32.0' aX1='0.0' aX2='22.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='282.6666666666667' y='192.0' dx='9.641975308641975' dy='0.19191919191919182' />
+<point n='1' x='441.3333333333333' y='217.33333333333334' dx='17.722222222222218' dy='0.06397306397306379' />
+<point n='2' x='473.3333333333333' y='216.66666666666666' dx='19.351851851851848' dy='0.06734006734006726' />
+</data>

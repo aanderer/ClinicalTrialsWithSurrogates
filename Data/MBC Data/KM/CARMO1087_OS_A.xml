@@ -1,0 +1,16 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Thu Aug 30 23:23:34 EDT 2018 -->
+<data>
+<image file='CARMO1087_OS.png' />
+<axesnames x='months'  y='p' />
+<calibpoints minXaxisX='183.5' minXaxisY='677.0' maxXaxisX='1492.0' maxXaxisY='677.0' minYaxisX='183.5' minYaxisY='677.0' maxYaxisX='183.5' maxYaxisY='36.0' aX1='0.0' aX2='32.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='197.5' y='33.5' dx='0.3423767672907907' dy='1.0039001560062404' />
+<point n='1' x='353.5' y='36.0' dx='4.1574321742453195' dy='1.0' />
+<point n='2' x='518.0' y='147.0' dx='8.180359189912114' dy='0.826833073322933' />
+<point n='3' x='674.5' y='255.5' dx='12.007642338555598' dy='0.6575663026521061' />
+<point n='4' x='841.0' y='291.0' dx='16.07948032097822' dy='0.6021840873634946' />
+<point n='5' x='1002.0' y='372.0' dx='20.016813144822315' dy='0.47581903276131055' />
+<point n='6' x='1165.0' y='401.0' dx='24.00305693542224' dy='0.43057722308892366' />
+<point n='7' x='1331.5' y='457.0' dx='28.074894917844862' dy='0.343213728549142' />
+<point n='8' x='1493.5' y='457.0' dx='32.03668322506687' dy='0.343213728549142' />
+</data>

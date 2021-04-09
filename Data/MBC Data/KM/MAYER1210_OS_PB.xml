@@ -1,0 +1,13 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Wed Nov 28 10:21:53 EST 2018 -->
+<data>
+<image file='MAYER1210.JPG' />
+<axesnames x='months '  y='survival' />
+<calibpoints minXaxisX='50.5' minXaxisY='184.0' maxXaxisX='431.0' maxXaxisY='185.0' minYaxisX='50.5' minYaxisY='184.0' maxYaxisX='50.0' maxYaxisY='15.5' aX1='0.0' aX2='14.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='58.0' y='14.5' dx='0.25956054392402295' dy='1.0060595426098147' />
+<point n='1' x='109.0' y='15.5' dx='2.136122598748111' dy='1.0009202394182215' />
+<point n='2' x='110.0' y='30.0' dx='2.174318152385063' dy='0.9148817531340782' />
+<point n='3' x='131.5' y='29.5' dx='2.965328728685515' dy='0.9181844768087969' />
+<point n='4' x='128.5' y='45.5' dx='2.8564955752212375' dy='0.8231814548361311' />
+<point n='5' x='355.0' y='46.0' dx='11.190257716382474' dy='0.8237468561735977' />
+</data>

@@ -1,0 +1,14 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Sun Nov 05 17:15:25 EST 2017 -->
+<data>
+<image file='CANEL1176_OS.png' />
+<axesnames x='months'  y='p' />
+<calibpoints minXaxisX='56.5' minXaxisY='275.5' maxXaxisX='375.5' maxXaxisY='276.5' minYaxisX='56.5' minYaxisY='275.5' maxYaxisX='58.0' maxYaxisY='14.0' aX1='0.0' aX2='18.0' aY1='-1.0' aY2='0.0' isXLog='false' isYLog='true' />
+<point n='0' x='57.0' y='14.0' dx='-0.01804209822920111' dy='0.9999723980662317' />
+<point n='1' x='109.0' y='43.5' dx='2.921316404944872' dy='0.7723296096934891' />
+<point n='2' x='162.5' y='65.0' dx='5.943898508284036' dy='0.640070075209352' />
+<point n='3' x='216.5' y='97.0' dx='8.996550775338536' dy='0.483622072289331' />
+<point n='4' x='269.5' y='154.0' dx='11.997199347497103' dy='0.29320551914408166' />
+<point n='5' x='322.5' y='169.0' dx='14.990418820384823' dy='0.25730435385299805' />
+<point n='6' x='373.5' y='230.0' dx='17.878923370216786' dy='0.15058894654989893' />
+</data>

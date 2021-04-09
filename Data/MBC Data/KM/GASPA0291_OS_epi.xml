@@ -1,0 +1,11 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Mon Nov 06 01:10:37 EST 2017 -->
+<data>
+<image file='GASPA0291_OS.png' />
+<axesnames x='months'  y='p' />
+<calibpoints minXaxisX='62.666666666666664' minXaxisY='369.3333333333333' maxXaxisX='390.0' maxXaxisY='368.6666666666667' minYaxisX='44.0' minYaxisY='370.0' maxYaxisX='42.666666666666664' maxYaxisY='75.33333333333333' aX1='0.0' aX2='18.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='61.333333333333336' y='76.0' dx='-0.04046755875594377' dy='0.9976085594219994' />
+<point n='1' x='170.0' y='116.66666666666667' dx='5.93051326934404' dy='0.8588497124741965' />
+<point n='2' x='282.0' y='224.66666666666666' dx='12.077251723479979' dy='0.49156314508994403' />
+<point n='3' x='392.0' y='265.3333333333333' dx='18.121552003052905' dy='0.35279508257151315' />
+</data>

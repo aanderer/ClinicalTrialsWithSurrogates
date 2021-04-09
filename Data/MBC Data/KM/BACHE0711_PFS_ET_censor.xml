@@ -1,0 +1,9 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Sat Nov 04 21:16:55 EDT 2017 -->
+<data>
+<image file='BACHE0711_PFS.png' />
+<axesnames x='months'  y='p' />
+<calibpoints minXaxisX='69.0' minXaxisY='203.5' maxXaxisX='405.5' maxXaxisY='204.0' minYaxisX='69.0' minYaxisY='204.0' maxYaxisX='69.5' maxYaxisY='19.0' aX1='0.0' aX2='54.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='371.5' y='194.0' dx='48.54146115293754' dy='0.05648344852235443' />
+<point n='1' x='396.5' y='193.5' dx='52.55322014439318' dy='0.05938693471372747' />
+</data>

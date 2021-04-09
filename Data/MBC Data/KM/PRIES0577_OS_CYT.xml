@@ -1,0 +1,16 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Wed Nov 28 15:43:47 EST 2018 -->
+<data>
+<image file='PRIES0577.JPG' />
+<axesnames x='weeks'  y='survival' />
+<calibpoints minXaxisX='57.0' minXaxisY='227.0' maxXaxisX='267.5' maxXaxisY='229.0' minYaxisX='57.0' minYaxisY='227.0' maxYaxisX='57.0' maxYaxisY='16.0' aX1='0.0' aX2='90.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='59.5' y='17.0' dx='0.21578837507122017' dy='0.9953732368204793' />
+<point n='1' x='81.0' y='42.0' dx='9.508905149020904' dy='0.8778579549931892' />
+<point n='2' x='102.5' y='46.0' dx='18.716722047648318' dy='0.8598687395166101' />
+<point n='3' x='125.5' y='69.5' dx='28.645018250337074' dy='0.7495300064166788' />
+<point n='4' x='151.0' y='83.0' dx='39.60148259307107' dy='0.6866972115590277' />
+<point n='5' x='173.0' y='92.5' dx='49.045397360894064' dy='0.6426641600342222' />
+<point n='6' x='196.5' y='93.5' dx='59.09605826568201' dy='0.6389830126870123' />
+<point n='7' x='221.5' y='110.5' dx='69.85298182864426' dy='0.5595400254415688' />
+<point n='8' x='268.0' y='110.0' dx='89.73039146549922' dy='0.5640035573167024' />
+</data>

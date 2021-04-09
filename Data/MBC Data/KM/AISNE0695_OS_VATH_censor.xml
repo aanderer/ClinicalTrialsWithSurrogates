@@ -1,0 +1,10 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Sat Nov 04 18:58:11 EDT 2017 -->
+<data>
+<image file='null' />
+<axesnames x='months'  y='p' />
+<calibpoints minXaxisX='63.0' minXaxisY='309.0' maxXaxisX='620.0' maxXaxisY='311.0' minYaxisX='59.0' minYaxisY='303.0' maxYaxisX='57.0' maxYaxisY='18.0' aX1='0.0' aX2='110.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='360.0' y='280.0' dx='58.63218083306205' dy='0.08449612891439506' />
+<point n='1' x='410.0' y='284.5' dx='68.5095712209068' dy='0.06933621433656079' />
+<point n='2' x='548.0' y='292.5' dx='95.76803447508968' dy='0.0430040128259237' />
+</data>

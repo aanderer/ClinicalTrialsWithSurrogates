@@ -1,0 +1,14 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Sun Nov 05 16:34:55 EST 2017 -->
+<data>
+<image file='BRUNN0677_OS2.png' />
+<axesnames x='months'  y='p' />
+<calibpoints minXaxisX='56.5' minXaxisY='262.0' maxXaxisX='346.5' maxXaxisY='259.0' minYaxisX='56.0' minYaxisY='261.5' maxYaxisX='54.0' maxYaxisY='18.5' aX1='0.0' aX2='36.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='54.5' y='18.5' dx='0.06441641203676074' dy='0.9999787161586923' />
+<point n='1' x='103.0' y='43.5' dx='6.052360627281267' dy='0.8950422838980645' />
+<point n='2' x='151.0' y='83.5' dx='11.958981797429526' dy='0.7284039956864747' />
+<point n='3' x='200.0' y='132.5' dx='17.97817118263206' dy='0.524689255916908' />
+<point n='4' x='248.5' y='167.0' dx='23.953916941112134' dy='0.38066150178784275' />
+<point n='5' x='296.5' y='196.0' dx='29.874662640145527' dy='0.25928684942391733' />
+<point n='6' x='345.5' y='205.5' dx='35.944571924526514' dy='0.21810971110732724' />
+</data>

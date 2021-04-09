@@ -1,0 +1,15 @@
+<?xml version = '1.0'  encoding = 'ISO-8859-1'  standalone = 'yes' ?>
+<!-- PlotDigitizer data file: created on Sat Nov 04 18:47:53 EDT 2017 -->
+<data>
+<image file='AISNE0695_TTF.png' />
+<axesnames x='months'  y='p' />
+<calibpoints minXaxisX='66.0' minXaxisY='304.0' maxXaxisX='626.0' maxXaxisY='306.0' minYaxisX='62.0' minYaxisY='297.0' maxYaxisX='63.0' maxYaxisY='14.0' aX1='0.0' aX2='110.0' aY1='0.0' aY2='1.0' isXLog='false' isYLog='false' />
+<point n='0' x='102.5' y='131.0' dx='7.048188160865294' dy='0.587076134829192' />
+<point n='1' x='264.0' y='267.0' dx='38.866404765245335' dy='0.10855491475372603' />
+<point n='2' x='356.0' y='278.0' dx='56.94531957500541' dy='0.07084716245378042' />
+<point n='3' x='396.0' y='278.5' dx='64.8027129755998' dy='0.0695851894852414' />
+<point n='4' x='431.5' y='281.0' dx='71.77759212254945' dy='0.06119937910929962' />
+<point n='5' x='457.0' y='279.0' dx='76.78505376206937' dy='0.06858823084009535' />
+<point n='6' x='476.0' y='284.5' dx='80.52100738510988' dy='0.049393621988617076' />
+<point n='7' x='516.0' y='284.5' dx='88.37805002487214' dy='0.049898411176032664' />
+</data>
