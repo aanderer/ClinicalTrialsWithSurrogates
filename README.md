@@ -27,7 +27,7 @@ If you use the data or code included here, please use the following citation:
 ### Different potential surrogate and true outcome pairs in oncology trials
 This section 
 
-<img align="center" width="600" src="https://github.com/aanderer/ClinicalTrialsWithSurrogates/Plots/actual_rhoI_vs_rho0.png">
+<img align="center" width="600" src="https://github.com/aanderer/ClinicalTrialsWithSurrogates/blob/main/Plots/actual_rhoI_vs_rho0.png?raw=true">
 
 Bivariate Normal Check.csv: Compiled from scraping data from 30 meta-analyses for different diseases with time-to-event outcomes.
 
