@@ -24,10 +24,12 @@ If you use the data or code included here, please use the following citation:
 
 ## Data
 
-### Different potential surrogate and true outcome pairs in oncology trials
-This section 
+### Different time-to-event surrogates
+This group of data files contains data from meta-analyses on time-to-event surrogate outcomes, mostly in oncology trials. An example of how this data is useful can be found in the following plot:
 
-<img align="center" width="600" src="Plots/actual_rhoI_vs_rho0.png">
+<img align="center" width="400" src="Plots/actual_rhoI_vs_rho0.png">
+
+Here, each dot represents a different surrogate/true outcome pair. We can see the individual-level correlation.
 
 
 Bivariate Normal Check.csv: Compiled from scraping data from 30 meta-analyses for different diseases with time-to-event outcomes.
