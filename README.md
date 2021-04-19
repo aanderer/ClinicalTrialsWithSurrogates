@@ -29,10 +29,10 @@ This group of data files contains data from meta-analyses on time-to-event surro
 
 <img align="center" width="400" src="Plots/actual_rhoI_vs_rho0.png">
 
-Here, each dot represents a different surrogate/true outcome pair. We can see the individual-level correlation.
+Here, each dot represents a different surrogate/true outcome pair. We can see the individual-level correlation versus the study-level correlation for each pair. This helps us visualize what the relationship between these two values looks like across different potentially useful surrogate/true outcome pairs.
 
 
-<b>Bivariate Normal Check.csv</b>: This file has information from 30 different surrogate/true outcome pairs at the trial level (we have information on between 7 and 36 trials for each pair) about hazard ratios for both outcomes. This information was compiled from scraping data from 21 meta-analyses for different diseases with time-to-event outcomes.
+<b>Bivariate Normal Check.csv</b>: This file has data at the trial level on 30 different surrogate/true outcome pairs (we have information on between 7 and 36 trials for each pair) about hazard ratios for both outcomes. This information was compiled from scraping data from 21 meta-analyses for different diseases with time-to-event outcomes.
 
 * Paper: id for meta-analysis it comes from (first 4 letters of first author’s last name + mmyy of publication)
 * Disease: disease this trial is looking to treat
