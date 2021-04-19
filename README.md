@@ -32,13 +32,22 @@ This group of data files contains data from meta-analyses on time-to-event surro
 Here, each dot represents a different surrogate/true outcome pair. We can see the individual-level correlation.
 
 
-Bivariate Normal Check.csv: Compiled from scraping data from 30 meta-analyses for different diseases with time-to-event outcomes.
+<b>Bivariate Normal Check.csv</b>: This file has information from 30 different surrogate/true outcome pairs at the trial level (we have information on between 7 and 36 trials for each pair) about hazard ratios for both outcomes. This information was compiled from scraping data from 21 meta-analyses for different diseases with time-to-event outcomes.
 
 * Paper: id for meta-analysis it comes from (first 4 letters of first author’s last name + mmyy of publication)
 * Disease: disease this trial is looking to treat
+* TRUE: which true outcome measured by the trial
+* Surrogate: which surrogate outcome measured by the trial
+* Trial: Trial name/id
+* Patients Treatment: treatment group size
+* Patients Control: control group size
+* HR Surrogate: the hazard ratio measured for the surrogate outcome
+* CI Surrogate: confidence interval for HR Surrogate
+* HR True: the hazard ratio measured for the true outcome 
+* CI True: confidence interval for HR True
 
 
-IPD_surrogate_correlations.csv: Compiled from scraping data from meta-analyses for different diseases with time-to-event outcomes. 
+IPD_surrogate_correlations.csv: This file has information on different surrogate/true outcome pairs. Compiled from scraping data from meta-analyses for different diseases with time-to-event outcomes. 
 To collect these papers, we searched PubMed for meta-analyses of surrogate time-to-event endpoints and wound up with 80 papers. 
 Some of these papers contain multiple surrogate endpoints for the same disease.
 
