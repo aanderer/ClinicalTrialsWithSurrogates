@@ -119,7 +119,7 @@ trial arm (if recorded in paper)
 curve for this treatment arm
 * PFS_Note: anything else deemed important by RAs
 
-<b>MBC_info.csv</b>:This file has additional trial design and demographic information collected for each arm of each of the 89 trials in MBC repository that contain Kaplan-Meier curves for both Overal Survival AND either Progression Free Survival or Time to Progression.
+<b>MBC_info.csv</b>:This file has additional trial design and demographic information collected for each arm of each of the 89 trials in the MBC repository that contain Kaplan-Meier curves for both Overal Survival AND either Progression Free Survival or Time to Progression.
 
 * Unique_ID: identification for paper and study arm
 * ECOG_0: proportion of patients with level 0 ECOG performance status (Eastern
@@ -196,8 +196,27 @@ We also include code here which can be used to simulate clinical trials and anal
 
 #### Metastatic Breast Cancer (MBC):
 
-### Numerical simulation
-<b>numericalSimulations.R</b>
+<b>summaryTable.R</b>: Outputs a demographic summary table for the 89 trials in the MBC repository that contain Kaplan-Meier curves for both Overal Survival AND either Progression Free Survival or Time to Progression.
+
+<b>Plot_MBCtrialInfo_OverTime.R</b>: Code for checking our equipoise assumption by plotting the hazard ratios for metastatic breast cancer clinical trials versus the year they were published.
+
+### Simulation
+<b>numericalSimulations.R</b>: Code for running numerical simulations based on underlying model with many different prior inputs.
+
+<b>mainSim.R</b>: Code for simulating trials from the real data in KM Curves folder.
+
+<b>Type1Type2SurvivalFunc_discounting.R</b>: Code for the fundamental functions needed for Type 1 / Type 2 Analysis for Survival.
+
+<b>Parameterizing_prior_Simulation.R</b>: Code for choosing trial design parameters for a traditional true outcome only trial, a surrogate outcome only trial, and our proposed combined surrogate and true outcome trial design.
+
+<b>misspecificationSensitivityAnalysis.R</b>: Code for sensitivity analysis to test robustness of our proposed combined surrogate and true outcome trial design to different types of misspecifications.
+
+<b>expectedSuccess.R</b>: Code for running numerical simulations based on an objective function of maximizing the number of expected successes.
+
+
+
+
+
 
 
 
