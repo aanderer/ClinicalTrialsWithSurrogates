@@ -182,6 +182,24 @@ experiment arm
 
 
 
+## Code
+
+We also include code here which can be used to simulate clinical trials and analyze some of this data.
+
+### Data analysis
+
+#### Different time-to-event surrogates:
+
+<b>Bivariate_Check.R</b>: Checks bivariate normality of surrogate and true effect sizes for different diseases
+
+<b>IPD_surrogate_correlations.R</b>: Look at study-level vs. individual level correlation for different surrogate/true outcome pairs
+
+#### Metastatic Breast Cancer (MBC):
+
+### Numerical simulation
+<b>numericalSimulations.R</b>
+
+
 
 
 
