@@ -47,7 +47,7 @@ Here, each dot represents a different surrogate/true outcome pair. We can see th
 * CI True: confidence interval for HR True
 
 
-IPD_surrogate_correlations.csv: This file has information at the meta-analysis level on different surrogate/true outcome pairs about individual level and study level correlations. Compiled from scraping data from meta-analyses for different diseases with time-to-event outcomes. 
+<b>IPD_surrogate_correlations.csv</b>: This file has information at the meta-analysis level on different surrogate/true outcome pairs about individual level and study level correlations. Compiled from scraping data from meta-analyses for different diseases with time-to-event outcomes. 
 To collect these papers, we searched PubMed for meta-analyses of surrogate time-to-event endpoints and wound up with 80 papers. 
 Some of these papers contain multiple surrogate endpoints for the same disease.
 
@@ -72,7 +72,7 @@ included)
 This is historical trial-specific data for different MBC drug therapies. All of this data is pulled manually from repository of 1,865 studies of MBC drug therapies collected by Silberholz et al. (2019), which is publicly available at http://www.cancertrials.info
 
 
-KM curves: This folder contains Kaplan-Meier curves pulled manually from the papers in the Silberholz et al. (2019) repository. It contains both images and data extracted from these images.
+<b>KM curves</b>: This folder contains Kaplan-Meier curves pulled manually from the papers in the Silberholz et al. (2019) repository. It contains both images and data extracted from these images.
 
 * .png files: one for each Kaplan Meier curve found in the papers in the
 MBC repository. Labeled as “paper id”_”outcome”.png
@@ -80,7 +80,105 @@ MBC repository. Labeled as “paper id”_”outcome”.png
 Labeled as “paper id”_”outcome”_”arm id”.xml
 
 
-MBC_data_final.csv: This file has information collected for each arm of each trial in MBC repository on the number of patients, the reported Hazard Ratios and related information for the different endpoints, and the names of the Kaplan-Meier curve data files if they exist.
+<b>MBC_data_final.csv</b>: This file has information collected for each arm of each trial in MBC repository on the number of patients, the reported Hazard Ratios and related information for the different endpoints, and the names of the Kaplan-Meier curve data files if they exist.
+
+* Unique_ID: “id of paper this arm comes from”_”arm specific id”
+* Arm.Name: short description of trial arm
+* Randomized: whether or not this was a randomized trial
+* KM_Curves: Yes/No, whether this paper contained KM curves for this
+arm
+* N_Patient: number of patients in this arm of the trial
+* OS: median overall survival for this arm of this trial
+* OS_Comp: OS hazard ratio and confidence interval for this trial (if
+recorded in paper; only recorded in one arm per trial)
+* OS_pval: p-value for hazard ratio (if recorded in paper; only recorded in
+one arm per trial)
+* OS_events: total number of overall survival events seen in this trial arm (if
+recorded in paper)
+* OS_KM: file name for xml file of extracted overall survival KM curve for
+this treatment arm
+* OS_Note: anything else deemed important by RAs
+* TTP: median time-to-progression for this arm of this trial
+* TTP_Comp: TTP hazard ratio and confidence interval for this trial (if
+recorded in paper; only recorded in one arm per trial)
+* TTP_pval: p-value for hazard ratio (if recorded in paper; only recorded in
+one arm per trial)
+* TTP_events: total number of time-to-progression events seen in this trial
+arm (if recorded in paper)
+* TTP_KM: file name for xml file of extracted time-to-progression KM
+curve for this treatment arm
+* TTP_Note: anything else deemed potentially important by RAs
+* PFS: median progression-free survival for this arm of this trial
+* PFS_Comp: PFS hazard ratio and confidence interval for this trial (if
+recorded in paper; only recorded in one arm per trial)
+* PFS_pval: p-value for hazard ratio (if recorded in paper; only recorded in
+one arm per trial)
+* PFS_events: total number of progression-free survival events seen in this
+trial arm (if recorded in paper)
+* PFS_KM: file name for xml file of extracted progression-free survival KM
+curve for this treatment arm
+* PFS_Note: anything else deemed important by RAs
+
+<b>MBC_info.csv</b>:This file has additional trial design and demographic information collected for each arm of each of the 89 trials in MBC repository that contain Kaplan-Meier curves for both Overal Survival AND either Progression Free Survival or Time to Progression.
+
+* Unique_ID: identification for paper and study arm
+* ECOG_0: proportion of patients with level 0 ECOG performance status (Eastern
+Cooperative Oncology Group (ECOG) performance status measures patient level
+of functioning on a scale from 0 (active) to 5 (dead))
+* ECOG_1: proportion of patients with level 1 ECOG performance status
+* ECOG_2: proportion of patients with level 2 ECOG performance status
+* ECOG_3: proportion of patients with level 3 ECOG performance status
+* ECOG_4: proportion of patients with level 4 ECOG performance status
+* N_Patient: number of patients in this arm of this study
+* Pub_Year: year trial was published
+* FRAC_MALE: fraction of participants in study arm who were male
+* AGE_MED: median age of participant in study arm
+* Prop_Visceral: proportion of patients with visceral disease (particularly severe
+MBC spread to internal organs)
+* OS: median overall survival reported in this arm
+* PFS: median progression free survival reported in this arm
+* Arm.Name: id for treatment given in this arm
+* Title: title of the published study for this trial
+* Arm_Type: experiment/control to delineate whether this arm was the experiment
+or control arm
+* Rand_Group: for multi-arm trials, there are multiple randomized comparisons;
+this column delineates which arms were compared to one another.
+
+
+<b>MBC_Phase.csv</b>: This file has some additional trial information collected for each arm of each of the trials in MBC repository.
+
+* Unique_ID: “id of paper this arm comes from”_”arm specific id”
+* Phase: I/II, II, or III indicating whether this is a phase I/II trial, a phase II
+trial, or a phase III trial
+* Arm_Type: control or experiment, denoting whether this is the control or
+experiment arm
+
+
+<b>OS_HR</b>: This file contains information on overall survival hazard ratios across different Metastatic Breast Cancer studies. This data was pulled manually from the subset of studies from the repository that contain estimates of overall survival hazard ratios.
+
+* IDexp: id for experimental arm
+* IDctl: id for control arm
+* rcode: identification number for paper
+* effect: HR effect size estimate for time to progression from paper 
+* effectSD: standard deviation for effect size estimate
+
+<b>PFS_HR</b>: This file contains information on progression free survival hazard ratios across different Metastatic Breast Cancer studies. This data was pulled manually from the subset of studies from the repository that contain estimates of progression free survival hazard ratios.
+
+* IDexp: id for experimental arm
+* IDctl: id for control arm
+* rcode: identification number for paper
+* effect: HR effect size estimate for time to progression from paper 
+* effectSD: standard deviation for effect size estimate
+
+
+<b>TTP_HR</b>: This file contains information on time to progression hazard ratios across different Metastatic Breast Cancer studies. This data was pulled manually from the subset of studies from the repository that contain estimates of time to progression hazard ratios.
+
+* IDexp: id for experimental arm
+* IDctl: id for control arm
+* rcode: identification number for paper
+* effect: HR effect size estimate for time to progression from paper 
+* effectSD: standard deviation for effect size estimate
+
 
 
 
