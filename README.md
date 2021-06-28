@@ -79,6 +79,7 @@ MBC repository. Labeled as “paper id”_”outcome”.png
 * .xml files: one for each arm in every Kaplan Meier curve .png file.
 Labeled as “paper id”_”outcome”_”arm id”.xml
 
+
 MBC_data_final.csv: This file has information collected for each arm of each trial in MBC repository on the number of patients, the reported Hazard Ratios and related information for the different endpoints, and the names of the Kaplan-Meier curve data files if they exist.
 
 
