@@ -2,7 +2,7 @@
 
 This repository contains data and code accompanying our paper "Adaptive Clinical Trial Design with Surrogates: When Should We Bother?" on combining true and surrogate outcomes in clinical trials.
 
-The data is separated into two categories. First, we provide a large repository of Kaplan-Meier survival curves for both surrogate and true outcomes from 1,865 metastatic breast cancer clinical trials. This data can be used to realistically simulate the performance of alternative clinical trial designs, including those that leverage intermediate surrogate outcomes. Second, we aggregate data from a number of meta-analyses of different surrogate and true outcome pairs used in oncology. This data can be used to parametrize a realistic relationship between surrogate and true outcomes in clinical trials.
+The data is separated into two categories. First, we provide a large repository of Kaplan-Meier survival curves for both surrogate and true outcomes from 1,865 metastatic breast cancer clinical trials. This data can be used to realistically simulate the performance of alternative clinical trial designs, including algorithms that leverage intermediate surrogate outcomes or contextual bandits. Second, we aggregate data from a number of meta-analyses of different surrogate and true outcome pairs used in oncology. This data can be used to parametrize a realistic relationship between surrogate and true outcomes in clinical trials.
 
 ## Citing this work
 
@@ -21,10 +21,10 @@ If you use the data or code included here, please use the following citation:
 
 ### Metastatic Breast Cancer (MBC)
 
-We provide historical trial-specific data for different MBC drug therapies. This data is pulled manually from a repository of 1,865 studies of MBC drug therapies collected by Silberholz et al. (2019), which is publicly available at http://www.cancertrials.info
+We provide historical trial-specific data for different MBC drug therapies. This data is obtained by manually digitizing Kaplan-Meier curves reported in 1,865 MBC clinical trial studies using PlotDigitizer software. We pull the images from a repository collected by Silberholz et al. (2019), which is publicly available at http://www.cancertrials.info.
 
 
-<b>KM curves</b>: This folder contains Kaplan-Meier curves pulled manually from the papers in the Silberholz et al. (2019) repository. It contains both images and data extracted from these images.
+<b>KM curves</b>: This folder contains both the original images and the corresponding digitized data from Kaplan-Meier curves.
 
 * .png files: one for each Kaplan Meier curve found in the papers in the
 MBC repository. Labeled as “paper id”_”outcome”.png
@@ -69,9 +69,17 @@ one arm per trial)
 trial arm (if recorded in paper)
 * PFS_KM: file name for xml file of extracted progression-free survival KM
 curve for this treatment arm
-* PFS_Note: anything else deemed important by RAs
+* PFS_Note: anything else deemed important by our research assistants
 
-<b>MBC_info.csv</b>:This file has additional trial design and demographic information collected for each arm of each of the 89 trials in the MBC repository that contain Kaplan-Meier curves for both Overal Survival AND either Progression Free Survival or Time to Progression.
+<b>MBC_Phase.csv</b>: This file has additional trial information collected for each arm in each trial.
+
+* Unique_ID: “id of paper this arm comes from”_”arm specific id”
+* Phase: I/II, II, or III indicating whether this is a phase I/II trial, a phase II
+trial, or a phase III trial
+* Arm_Type: control or experiment, denoting whether this is the control or
+experiment arm
+
+<b>MBC_info.csv</b>: Of the 1,865 MBC studies, 89 were two-armed RCTs that reported Kaplan-Meier curves on both surrogate (progression-free survival or time to progression) and true outcomes (overall survival). Thus, this subset of studies match most closely to an A/B test. This file has additional trial design and demographic information collected for each arm for this subset of trials.
 
 * Unique_ID: identification for paper and study arm
 * ECOG_0: proportion of patients with level 0 ECOG performance status (Eastern
@@ -97,16 +105,7 @@ or control arm
 this column delineates which arms were compared to one another.
 
 
-<b>MBC_Phase.csv</b>: This file has some additional trial information collected for each arm of each of the trials in MBC repository.
-
-* Unique_ID: “id of paper this arm comes from”_”arm specific id”
-* Phase: I/II, II, or III indicating whether this is a phase I/II trial, a phase II
-trial, or a phase III trial
-* Arm_Type: control or experiment, denoting whether this is the control or
-experiment arm
-
-
-<b>OS_HR</b>: This file contains information on overall survival hazard ratios across different Metastatic Breast Cancer studies. This data was pulled manually from the subset of studies from the repository that contain estimates of overall survival hazard ratios.
+<b>OS_HR</b>: This file contains information on overall survival hazard ratios across different MBC studies. This data was pulled manually from the subset of studies that reported estimates of overall survival hazard ratios.
 
 * IDexp: id for experimental arm
 * IDctl: id for control arm
@@ -114,7 +113,7 @@ experiment arm
 * effect: HR effect size estimate for time to progression from paper 
 * effectSD: standard deviation for effect size estimate
 
-<b>PFS_HR</b>: This file contains information on progression free survival hazard ratios across different Metastatic Breast Cancer studies. This data was pulled manually from the subset of studies from the repository that contain estimates of progression free survival hazard ratios.
+<b>PFS_HR</b>: This file contains information on the hazard ratios of the most common surrogate (progression-free survival) across different MBC studies. This data was pulled manually from the subset of studies that reported estimates of progression-free survival hazard ratios.
 
 * IDexp: id for experimental arm
 * IDctl: id for control arm
@@ -123,7 +122,7 @@ experiment arm
 * effectSD: standard deviation for effect size estimate
 
 
-<b>TTP_HR</b>: This file contains information on time to progression hazard ratios across different Metastatic Breast Cancer studies. This data was pulled manually from the subset of studies from the repository that contain estimates of time to progression hazard ratios.
+<b>TTP_HR</b>: This file contains information on the hazard ratios of a closely-related surrogate (time-to-progression) across different MBC studies. This data was pulled manually from the subset of studies that reported estimates of time-to-progression hazard ratios.
 
 * IDexp: id for experimental arm
 * IDctl: id for control arm
@@ -133,31 +132,14 @@ experiment arm
 
 
 ### Different time-to-event surrogates
-This group of data files contains data from meta-analyses on time-to-event surrogate outcomes, mostly in oncology trials. An example of how this data is useful can be found in the following plot:
+
+We manually collected true and surrogate outcome pairs from 65 meta-analyses in the medical literature. We arrived at this set by searching PubMed using the terms “surrogate outcome meta-analysis”, which gave us 537 results, and then we manually extracted all studies which listed both study-level and individual-level correlations to obtain these 65 surrogate/true outcome pairs from 80 different meta-analyses. As the literature on meta-analyses and surrogate outcomes expands, one will be able to collect this data on a much larger range of diseases
+
+All data are on time-to-event surrogate outcomes in oncology trials. The following scatterplot depicts the relationship between the individual-level correlation and the study-level correlation for each pair:
 
 <img align="center" width="400" src="Plots/actual_rhoI_vs_rho0.png">
 
-Here, each dot represents a different surrogate/true outcome pair. We can see the individual-level correlation versus the study-level correlation for each pair. This helps us visualize what the relationship between these two values looks like across different potentially useful surrogate/true outcome pairs.
-
-
-<b>TRUE_SURR_HR_Distribution.csv</b>: This file has data at the trial level on 30 different surrogate/true outcome pairs (we have information on between 7 and 36 trials for each pair) about hazard ratios for both outcomes. This information was compiled from scraping data from 21 meta-analyses for different diseases with time-to-event outcomes.
-
-* Paper: id for meta-analysis it comes from (first 4 letters of first author’s last name + mmyy of publication)
-* Disease: disease this trial is looking to treat
-* TRUE: name or abbreviation of true outcome measured by the trial
-* Surrogate: name or abbreviation of surrogate outcome measured by the trial
-* Trial: Trial name/id
-* Patients Treatment: treatment group size
-* Patients Control: control group size
-* HR Surrogate: the hazard ratio measured for the surrogate outcome
-* CI Surrogate: confidence interval for HR Surrogate
-* HR True: the hazard ratio measured for the true outcome 
-* CI True: confidence interval for HR True
-
-
-<b>IPD_surrogate_correlations.csv</b>: This file has information at the meta-analysis level on different surrogate/true outcome pairs about individual level and study level correlations. Compiled from scraping data from meta-analyses for different diseases with time-to-event outcomes. 
-To collect these papers, we searched PubMed for meta-analyses of surrogate time-to-event endpoints and wound up with 80 papers. 
-Some of these papers contain multiple surrogate endpoints for the same disease.
+<b>IPD_surrogate_correlations.csv</b>: This file has information at the meta-analysis level on different surrogate/true outcome pairs about individual-level and study-level correlations. Some of these papers contain multiple surrogate endpoints for the same disease.
 
 * Paper: id for meta-analysis it comes from (first 4 letters of first author’s last name + mmyy of publication)
 * Disease: disease this trial is looking to treat
@@ -173,10 +155,27 @@ included)
 included)
 * Notes: any additional concerns
 
+<b>TRUE_SURR_HR_Distribution.csv</b>: This file has data at the trial-level on 30 different surrogate/true outcome pairs (we have information on between 7 and 36 trials for each pair). This information was compiled from a subset of 21 meta-analyses (out of the 80 above) that reported trial-level hazard ratios for both outcomes.
+
+* Paper: id for meta-analysis it comes from (first 4 letters of first author’s last name + mmyy of publication)
+* Disease: disease this trial is looking to treat
+* TRUE: name or abbreviation of true outcome measured by the trial
+* Surrogate: name or abbreviation of surrogate outcome measured by the trial
+* Trial: Trial name/id
+* Patients Treatment: treatment group size
+* Patients Control: control group size
+* HR Surrogate: the hazard ratio measured for the surrogate outcome
+* CI Surrogate: confidence interval for HR Surrogate
+* HR True: the hazard ratio measured for the true outcome 
+* CI True: confidence interval for HR True
+
+
+
+
 
 ## Code
 
-We also include code here which can be used to simulate clinical trials and analyze some of this data.
+We also include code here that reproduces the results of our paper "Adaptive Clinical Trial Designs with Surrogates: When Should We Bother?" This code is used to analyze some of the data collected above, parametrize a Bayesian prior, and simulate a number of adaptive clinical trial designsa.
 
 ### Data analysis
 
