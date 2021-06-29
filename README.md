@@ -1,15 +1,12 @@
 # Clinical Trials with Surrogates: Data and Code
 
-This repository contains data and code accompanying our paper on combining true and surrogate outcomes in clinical trials.
+This repository contains data and code accompanying our paper "Adaptive Clinical Trial Design with Surrogates: When Should We Bother?" on combining true and surrogate outcomes in clinical trials.
 
 The data is separated into two categories. First, we provide a large repository of Kaplan-Meier survival curves for both surrogate and true outcomes from 1,865 metastatic breast cancer clinical trials. This data can be used to realistically simulate the performance of alternative clinical trial designs, including those that leverage intermediate surrogate outcomes. Second, we aggregate data from a number of meta-analyses of different surrogate and true outcome pairs used in oncology. This data can be used to parametrize a realistic relationship between surrogate and true outcomes in clinical trials.
 
 ## Citing this work
-The code and data included here are used for data analysis and simulation in the paper "Adaptive Clinical Trial Design with Surrogates: When Should We Bother?"
 
 If you use the data or code included here, please use the following citation:
-
-
 
 ```
 @article{anderer2021adaptive,
@@ -24,7 +21,7 @@ If you use the data or code included here, please use the following citation:
 
 ### Metastatic Breast Cancer (MBC)
 
-This is historical trial-specific data for different MBC drug therapies. All of this data is pulled manually from repository of 1,865 studies of MBC drug therapies collected by Silberholz et al. (2019), which is publicly available at http://www.cancertrials.info
+We provide historical trial-specific data for different MBC drug therapies. This data is pulled manually from a repository of 1,865 studies of MBC drug therapies collected by Silberholz et al. (2019), which is publicly available at http://www.cancertrials.info
 
 
 <b>KM curves</b>: This folder contains Kaplan-Meier curves pulled manually from the papers in the Silberholz et al. (2019) repository. It contains both images and data extracted from these images.
