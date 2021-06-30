@@ -133,7 +133,7 @@ this column delineates which arms were compared to one another.
 
 ### Different time-to-event surrogates
 
-We manually collected true and surrogate outcome pairs from 65 meta-analyses in the medical literature. We arrived at this set by searching PubMed using the terms “surrogate outcome meta-analysis”, which gave us 537 results, and then we manually extracted all studies which listed both study-level and individual-level correlations to obtain these 65 surrogate/true outcome pairs from 80 different meta-analyses. As the literature on meta-analyses and surrogate outcomes expands, one will be able to collect this data on a much larger range of diseases
+We manually collected true and surrogate outcome pairs from meta-analyses in the medical literature. We arrived at this set by searching PubMed using the terms “surrogate outcome meta-analysis”, which gave us 537 results, and then we manually extracted all studies which listed both study-level and individual-level correlations to obtain these 65 surrogate/true outcome pairs from 80 different meta-analyses. As the literature on meta-analyses and surrogate outcomes expands, one will be able to collect this data on a much larger range of diseases
 
 All data are on time-to-event surrogate outcomes in oncology trials. The following scatterplot depicts the relationship between the individual-level correlation and the study-level correlation for each pair:
 
